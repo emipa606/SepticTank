@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorkGiverDef>
+    <defName>emptySewage</defName>
+    <label>Empty Sewage</label>
+    <giverClass>FecalToCompost.WorkGiver_emptySewage</giverClass>
+    <workType>Hauling</workType>
+    <verb>store</verb>
+    <gerund>storing</gerund>
+    <priorityInType>99</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>

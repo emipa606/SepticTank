@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BasedHygieneMom">
+    <defName>SepticTank</defName>
+    <label>Septic Tank</label>
+    <description>Tank for seweage, must be emptied manually. Gives compost.</description>
+    <thingClass>FecalToCompost.Building_SepticTank</thingClass>
+    <graphicData>
+      <texPath>Things/Building/SepticTank</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,2)</drawSize>
+      <damageData>
+        <rect>(0.05,0.05,0.95,0.95)</rect>
+      </damageData>
+    </graphicData>
+    <category>Building</category>
+    <tickerType>Never</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>false</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <selectable>true</selectable>
+    <pathCost>8</pathCost>
+    <size>(4,2)</size>
+    <costList>
+      <Steel>405</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <rotatable>true</rotatable>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-80</Cleanliness>
+    </statBases>
+    <designationHotKey>Misc11</designationHotKey>
+    <comps>
+      <li Class="DubsBadHygiene.CompProperties_Pipe">
+        <mode>Sewage</mode>
+      </li>
+      <li Class="DubsBadHygiene.CompProperties_SepticTank">
+        <compClass>DubsBadHygiene.CompSewageTreatment</compClass>
+        <TreatedPerDay>0</TreatedPerDay>
+        <capacity>960</capacity>
+        <priority>2</priority>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Plumbing</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>
