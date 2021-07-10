@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="BasedHygieneMom">
     <defName>SepticTank</defName>
-    <label>Septic Tank</label>
+    <label>Compost Tank</label>
     <description>Tank for seweage, must be emptied manually. Gives compost.</description>
     <thingClass>FecalToCompost.Building_SepticTank</thingClass>
     <graphicData>

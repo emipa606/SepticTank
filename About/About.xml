@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Septic Tank (Continued)</name>
   <packageId>Mlie.SepticTank</packageId>
@@ -41,16 +41,16 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1179785659
 [img]https://i.imgur.com/NOW7jU1.png[/img]
 This is an addon for Rainbeau FF and Dubs Bad Hygiene.
 
-Formally Fecal sludge to fertiliser. Dubs Bad Hygiene went through a signficant overhaul and removed a lot of "fluff".
+Formally Fecal sludge to fertiliser. Dubs Bad Hygiene went through a signficant overhaul and removed a lot of &quot;fluff&quot;.
 
-I like the idea of utilising night soil for fertilisation. This mod is an intended addon for owner of both dubs bad hygiene and Rainbeau fertile field. It adds an early sewage disposal, the septic tank, which is useful if you don't have river.
+I like the idea of utilising night soil for fertilisation. This mod is an intended addon for owner of both dubs bad hygiene and Rainbeau fertile field. It adds an early sewage disposal, the septic tank, which is useful if you don&apos;t have river.
 
 Septic tank now fills with each use of the toilet thanks to dubs changing how waste operate. Previously you get burn barrel to process into fecal sludge, then process that into compost, now you get the raw compost instead. Its 1 compost for every 80 sewage. How ever you can only empty tank once its at 480 storage.
 Septic tank stores maximum of 960 sewage, once full it will stop functioning.
 
 Unlike SewageProcessor you do not reclaim water. Its not intended that septic tank phase out alternative sewage building.
 
-I know there a long process of santising night soil before it can be useful, but I want to keep the mod light weight and I don't wish to create what would be a alternate compost barrel.
+I know there a long process of santising night soil before it can be useful, but I want to keep the mod light weight and I don&apos;t wish to create what would be a alternate compost barrel.
 
 IMPORTANT!!!
 
@@ -73,4 +73,3 @@ This mod was able to exist thanks to Rainbeau mod source code and decompiling of
 [/list]
 </description>
 </ModMetaData>
-

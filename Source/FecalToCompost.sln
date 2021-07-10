@@ -1,7 +1,8 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FecalToCompost", "FecalToCompost\FecalToCompost.csproj", "{68115E66-81FA-47BD-84EE-74C734EBF658}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FecalToCompost", "FecalToCompost\FecalToCompost.csproj", "{68115E66-81FA-47BD-84EE-74C734EBF658}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +10,16 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{68115E66-81FA-47BD-84EE-74C734EBF658}.Debug|x86.ActiveCfg = Debug|x86
-		{68115E66-81FA-47BD-84EE-74C734EBF658}.Debug|x86.Build.0 = Debug|x86
-		{68115E66-81FA-47BD-84EE-74C734EBF658}.Release|x86.ActiveCfg = Release|x86
-		{68115E66-81FA-47BD-84EE-74C734EBF658}.Release|x86.Build.0 = Release|x86
+		{68115E66-81FA-47BD-84EE-74C734EBF658}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{68115E66-81FA-47BD-84EE-74C734EBF658}.Debug|x86.Build.0 = Debug|Any CPU
+		{68115E66-81FA-47BD-84EE-74C734EBF658}.Release|x86.ActiveCfg = Release|Any CPU
+		{68115E66-81FA-47BD-84EE-74C734EBF658}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E627D7EA-03C0-4F73-81A4-3DC30D720914}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
