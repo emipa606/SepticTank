@@ -1,11 +1,10 @@
 using RimWorld;
 using Verse;
 
-namespace FecalToCompost
+namespace FecalToCompost;
+
+[DefOf]
+public static class ThingDefOf
 {
-    [DefOf]
-    public static class ThingDefOf
-    {
-        public static ThingDef SepticTank;
-    }
+    public static ThingDef SepticTank;
 }
