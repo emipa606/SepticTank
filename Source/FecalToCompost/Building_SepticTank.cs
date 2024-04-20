@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 using DubsBadHygiene;
+using UnityEngine;
 using Verse;
 using Verse.AI;
 
@@ -36,15 +37,15 @@ public class Building_SepticTank : Building
 
             if (GetSewage() >= 80)
             {
+                list.Add(new FloatMenuOption("Empty Sewage", action));
+                return list;
+
                 void action()
                 {
                     var job1 = new Job(DefDatabase<JobDef>.GetNamed("emptySewage"), this);
                     myPawn.jobs.TryTakeOrderedJob(job1);
                     myPawn.Reserve(this, job1);
                 }
-
-                list.Add(new FloatMenuOption("Empty Sewage", action));
-                return list;
             }
 
             {
@@ -80,7 +81,7 @@ public class Building_SepticTank : Building
         return numberOfCompost;
     }
 
-    public override void Draw()
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         //Draw nothing
     }
