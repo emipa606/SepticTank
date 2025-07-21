@@ -2,5 +2,14 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "2",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "Patches": false,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 7349,
+  "LinesOfXML": 2569,
+  "CodeBaseSize": 64,
+  "LastXmlCleaning": "2025-07-21T21:29:56.4392221+02:00",
+  "SocialImageSet": true,
+  "SearchTags": " waste management"
 }

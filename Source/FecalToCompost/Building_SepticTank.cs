@@ -9,9 +9,9 @@ namespace FecalToCompost;
 
 public class Building_SepticTank : Building
 {
-    public CompSepticTank GetCompSepticTank => GetComp<CompSepticTank>();
+    private CompSepticTank GetCompSepticTank => GetComp<CompSepticTank>();
 
-    public float Pcnt => GetSewage() / 960;
+    private float Pcnt => GetSewage() / 960;
 
     public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
     {
@@ -58,7 +58,7 @@ public class Building_SepticTank : Building
         }
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
     }
 
@@ -67,7 +67,7 @@ public class Building_SepticTank : Building
         return GetCompSepticTank.sewageBuffer;
     }
 
-    public void SetSewage(float value)
+    private void setSewage(float value)
     {
         GetCompSepticTank.sewageBuffer = value;
     }
@@ -77,7 +77,7 @@ public class Building_SepticTank : Building
         //return int
         //Every
         var numberOfCompost = (int)(GetSewage() / 80);
-        SetSewage(0);
+        setSewage(0);
         return numberOfCompost;
     }
 
@@ -91,12 +91,7 @@ public class Building_SepticTank : Building
     {
         var stringBuilder = new StringBuilder();
 
-        stringBuilder.AppendLine($"Holding {GetSewage():0.0} of 960L ({Pcnt.ToStringPercent("0.0")})");
-
-        //Debuglines
-        //stringBuilder.AppendLine("sewageBuffer : " + this.sewageBuffer);
-        //stringBuilder.AppendLine("percentUsage : " + this.sewageBuffer/this.capacity);
-
+        stringBuilder.AppendLine($"{GetSewage():0.0}/960L ({Pcnt.ToStringPercent("0.0")})");
         return stringBuilder.ToString().Trim();
     }
 

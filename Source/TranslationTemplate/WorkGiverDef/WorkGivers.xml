@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Empty Sewage -->
+  <emptySewage.label>Empty Sewage</emptySewage.label>
+  <!-- EN: storing -->
+  <emptySewage.gerund>storing</emptySewage.gerund>
+  <!-- EN: store -->
+  <emptySewage.verb>store</emptySewage.verb>
+</LanguageData>

@@ -7,8 +7,7 @@ namespace FecalToCompost;
 public class WorkGiver_emptySewage : WorkGiver_Scanner
 {
     public override ThingRequest PotentialWorkThingRequest =>
-        //return ThingRequest.ForDef(ThingDef.Named("SewageTreatment"));
-        ThingRequest.ForDef(ThingDefOf.SepticTank);
+        ThingRequest.ForDef(DefOfs.SepticTank);
 
 
     public override PathEndMode PathEndMode => PathEndMode.Touch;
@@ -22,6 +21,6 @@ public class WorkGiver_emptySewage : WorkGiver_Scanner
 
     public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
     {
-        return new Job(DefDatabase<JobDef>.GetNamed("emptySewage"), t);
+        return new Job(DefOfs.emptySewage, t);
     }
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Compost Tank -->
+  <SepticTank.label>Compost Tank</SepticTank.label>
+  <!-- EN: Tank for seweage, must be emptied manually. Gives compost. -->
+  <SepticTank.description>Tank for seweage, must be emptied manually. Gives compost.</SepticTank.description>
+</LanguageData>

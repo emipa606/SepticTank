@@ -10,7 +10,7 @@ namespace FecalToCompost;
 
 public class JobDriver_emptySewage : JobDriver
 {
-    protected Building_SepticTank SewageProcessing => (Building_SepticTank)job.GetTarget(TargetIndex.A).Thing;
+    private Building_SepticTank SewageProcessing => (Building_SepticTank)job.GetTarget(TargetIndex.A).Thing;
 
     public override bool TryMakePreToilReservations(bool errorOnFailed)
     {
@@ -29,10 +29,9 @@ public class JobDriver_emptySewage : JobDriver
         {
             initAction = delegate
             {
-                var thing = ThingMaker.MakeThing(ThingDef.Named("RawCompost"));
+                var thing = ThingMaker.MakeThing(DefOfs.RawCompost);
                 thing.stackCount = SewageProcessing.EmptySewage();
                 GenPlace.TryPlaceThing(thing, pawn.Position, Map, ThingPlaceMode.Near);
-                //StoragePriority currentPriority = StoreUtility.StoragePriorityAtFor(thing.Position, thing);
                 if (StoreUtility.TryFindBestBetterStoreCellFor(thing, pawn, Map, StoragePriority.Normal,
                         pawn.Faction, out var c))
                 {
